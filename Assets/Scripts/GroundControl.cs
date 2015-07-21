@@ -9,10 +9,8 @@ public class GroundControl : MonoBehaviour {
 	//Offset the material texture at a constant rate
 	void Update () {
 
-		if (Input.GetKey (KeyCode.UpArrow)) {
 			float offset = Time.time * speed;                             
 			GetComponent<Renderer> ().material.mainTextureOffset = new Vector2 (0, -offset);
-		}
 	}
 
 }

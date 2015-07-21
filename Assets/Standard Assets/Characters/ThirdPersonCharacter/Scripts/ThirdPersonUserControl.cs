@@ -48,16 +48,17 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             // read inputs
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
-            float v = CrossPlatformInputManager.GetAxis("Vertical");
-            bool crouch = Input.GetKey(KeyCode.C);
+            //float v = CrossPlatformInputManager.GetAxis("Vertical");
+			float v = 1.0f;
+			bool crouch = Input.GetKey(KeyCode.C);
 
             // calculate move direction to pass to character
             if (m_Cam != null)
             {
                 // calculate camera relative direction to move:
                 m_CamForward = Vector3.Scale(m_Cam.forward, new Vector3(1, 0, 1)).normalized;
-                //m_Move = v*m_CamForward + h*m_Cam.right;
-				m_Move = h*m_Cam.right;
+                m_Move = v*m_CamForward + h*m_Cam.right;
+				//m_Move = h*m_Cam.right;
             }
             else
             {
