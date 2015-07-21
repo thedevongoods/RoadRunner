@@ -17,6 +17,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		[SerializeField] float m_AnimSpeedMultiplier = 1f;
 		[SerializeField] float m_GroundCheckDistance = 0.1f;
 
+		public GameControlScript control;
 		Rigidbody m_Rigidbody;
 		Animator m_Animator;
 		bool m_IsGrounded;
@@ -226,5 +227,23 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				m_Animator.applyRootMotion = false;
 			}
 		}
+
+
+		//check if the character collects the powerups or the snags
+		void OnTriggerEnter(Collider other)
+		{               
+			if(other.CompareTag("Powerup") && m_IsGrounded)
+			{
+				control.PowerupCollected();
+			}
+			else if(other.CompareTag("Obstacle") && m_IsGrounded)
+			{
+				control.AlcoholCollected();
+			}
+			
+			Destroy(other.gameObject);
+			
+		}
+
 	}
 }

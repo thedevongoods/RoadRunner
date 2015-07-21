@@ -7,7 +7,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 	public class GameControlScript : MonoBehaviour {
 		
 		public GUISkin skin;
-		float timeRemaining = 15;
+		float timeRemaining = 35;
 		float timeExtension = 3f;
 		float timeDeduction = 2f;
 		float totalTimeElapsed = 0;
