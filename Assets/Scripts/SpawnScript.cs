@@ -7,25 +7,25 @@ public class SpawnScript : MonoBehaviour {
 	public GameObject boulder;
 	
 	float timeElapsed = 0;
-	float spawnCycle = .8f;
+	float spawnCycle = .5f;
 	//bool spawnPowerup = true;
 	int spawnKind;
 	
 	void Update () {
 		timeElapsed += Time.deltaTime;
-		spawnKind = Random.Range (0, 5);
+		spawnKind = Random.Range (0, 7);
 		if(timeElapsed > spawnCycle)
 		{
 			GameObject temp;
-			if(spawnKind >= 2)
+			if(spawnKind > 1)
 			{
-				temp = (GameObject)Instantiate(powerup);
+				temp = (GameObject)Instantiate(obstacle);
 				Vector3 pos = temp.transform.position;
 				temp.transform.position = new Vector3(Random.Range(-3, 4), pos.y, pos.z);
 			}
-			else if(spawnKind <=1)
+			else
 			{
-				temp = (GameObject)Instantiate(obstacle);
+				temp = (GameObject)Instantiate(powerup);
 				Vector3 pos = temp.transform.position;
 				temp.transform.position = new Vector3(Random.Range(-3, 4), pos.y, pos.z);
 			}
