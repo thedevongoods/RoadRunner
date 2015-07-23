@@ -1,25 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True" selected="True" />
-      </Pad>
-      <Pad Id="ClassPad">
-        <State expanded="True" selected="True" />
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>m_Jump</Value>
-          <Value>transform.position</Value>
-        </State>
-      </Pad>
-    </Pads>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SpawnScript.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PauseMenuScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PowerupScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ObstacleScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BoulderScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/GameControlScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SpawnScript.cs" Line="20" Column="21" />
+    </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <FunctionBreakpoint line="1" conditionExpression="transform.position == new Vector3(0.1, 0.25, -7)" breakIfConditionChanges="True" function="transformCheck" language="C#" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

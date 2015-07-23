@@ -46,8 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BoulderScript.cs" />
+     <Compile Include="Assets\Scripts\CountdownScript.cs" />
      <Compile Include="Assets\Scripts\GroundControl.cs" />
      <Compile Include="Assets\Scripts\ObstacleScript.cs" />
+     <Compile Include="Assets\Scripts\PauseMenuScript.cs" />
      <Compile Include="Assets\Scripts\PlayerControl.cs" />
      <Compile Include="Assets\Scripts\PowerupScript.cs" />
      <Compile Include="Assets\Scripts\SpawnScript.cs" />

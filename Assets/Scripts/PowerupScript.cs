@@ -2,9 +2,14 @@
 using System.Collections;
 
 public class PowerupScript : MonoBehaviour {
-	public float objectSpeed = -0.5f;
+	
+	//public GameControlScript control;
+	public float objectSpeed = -20f;
+	
 	
 	void Update () {
-		transform.Translate(0, 0, objectSpeed);
+		
+		transform.Translate(new Vector3(0, 0, objectSpeed)*Time.deltaTime);
+		
 	}
 }

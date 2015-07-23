@@ -2,9 +2,14 @@
 using System.Collections;
 
 public class ObstacleScript : MonoBehaviour {
-	public float objectSpeed = -0.5f;
+	
+	//public GameControlScript control;
+	public float objectSpeed = -20f;
+	
 	
 	void Update () {
-		transform.Translate(0, objectSpeed, 0);
+		
+		transform.Translate(new Vector3(0, objectSpeed, 0)*Time.deltaTime);
+		
 	}
 }

@@ -57,8 +57,10 @@
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_OSX
 -define:CROSS_PLATFORM_INPUT
+'Assets/Scripts/BoulderScript.cs'
 'Assets/Scripts/GroundControl.cs'
 'Assets/Scripts/ObstacleScript.cs'
+'Assets/Scripts/PauseMenuScript.cs'
 'Assets/Scripts/PlayerControl.cs'
 'Assets/Scripts/PowerupScript.cs'
 'Assets/Scripts/SpawnScript.cs'
